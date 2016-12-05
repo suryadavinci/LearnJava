@@ -1,4 +1,4 @@
-package com.suryalinuxmint.oops;
+package com.suryatechsources.oops;
 
 public class Child extends Parent{
 

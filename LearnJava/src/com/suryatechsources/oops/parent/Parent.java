@@ -1,4 +1,4 @@
-package com.suryalinuxmint.oops.parent;
+package com.suryatechsources.oops.parent;
 
 public class Parent {
 	

@@ -1,4 +1,4 @@
-package com.suryalinuxmint.oops.child;
+package com.suryatechsources.oops.child;
 
 public class Neighbour extends Child {
 

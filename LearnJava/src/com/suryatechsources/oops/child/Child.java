@@ -1,6 +1,6 @@
-package com.suryalinuxmint.oops.child;
+package com.suryatechsources.oops.child;
 
-import com.suryalinuxmint.oops.parent.Parent;
+import com.suryatechsources.oops.parent.Parent;
 
 public class Child extends Parent {
 

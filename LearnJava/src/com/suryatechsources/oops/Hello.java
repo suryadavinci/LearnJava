@@ -1,4 +1,4 @@
-package com.suryalinuxmint.oops;
+package com.suryatechsources.oops;
 
 
 //cannot calla constructor as a normal method.
