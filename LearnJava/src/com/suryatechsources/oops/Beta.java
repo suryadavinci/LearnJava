@@ -54,7 +54,6 @@ public class Beta extends Alpha implements Runnable{
 		Object obj=new Object();
 		obj=(Object) x1;
 		
-		
 		return x1;
 	}
 	
@@ -62,14 +61,12 @@ public class Beta extends Alpha implements Runnable{
 	public static void main(String[] args) {
 
 	    
-	    
-	    //Calendar c= new Calendar();
+	   
 		
-		System.out.println((5<<2));
-	    
-	    Beta b= new Beta();
-	    Alpha a= b;
-	    //System.out.println(calendar.getTime());
+		int a[]= new int[5];
+		
+		
+		
 	    
 	    
 	    
