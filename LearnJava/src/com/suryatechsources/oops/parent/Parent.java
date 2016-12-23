@@ -2,59 +2,60 @@ package com.suryatechsources.oops.parent;
 
 import java.io.PrintStream;
 
-public  class Parent {
+class GrandParent{
 	
-int x=5;	
+	public GrandParent() {
+		// TODO Auto-generated constructor stub
+		System.out.println("Noarg GP");
+	}
 	
-	//public abstract String getName();
+	GrandParent(String i)
+	{
+		
+		System.out.println("String GP");
+	}
 	
-	 public void foo()
+	
+
+	
+	
+	
+}
+
+
+public  class Parent extends GrandParent{
+	
+	Parent()
+	{
+		System.out.println("empty Parent");
+	}
+	 Parent(String x)
 	 {
+		//this();
+		 super("Hello");
+		 System.out.println("String Parent");
 		 
-		 System.out.println("parent");
 	 }
-	 
-	 
-	  Parent() 
-	 {
-		//this(); 
-		// throw new Exception();
-	 }
-	 
 	  
 	public static void main(String[] args) throws Exception {
-		
-		
-		
-	
-		Parent p= new Parent() ;
-		Parent q=new Parent() ;
-		
-		
-		
-		System.out.println(p);
-		System.out.println(q);
-		
-		
-		p.x=10;
-		q.x=20;
-		
-		System.out.println(p);
-		System.out.println(q);
-		
-		
-		System.out.println(p.x);
-		System.out.println(q.x);
-		
-		Integer x=new Integer(5);
-		Integer y=x;
-		
-		
-		y=10;
-		
-		System.out.println(x+" "+y);
+		new Parent().whine(new Parent("hello"));;
 		
 	}
+	
+	
+	new LinkedList();
+	
+	void whine(Object o)
+	{
+
+	System.out.println("Object");
+	
+	}
+	
+
+	//void whine(Parent p)	{	System.out.println("Parent");	}
+
+	
 	
 	
 	
