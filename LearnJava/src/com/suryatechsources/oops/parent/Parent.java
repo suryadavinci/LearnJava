@@ -43,7 +43,7 @@ public  class Parent extends GrandParent{
 	}
 	
 	
-	new LinkedList();
+	//new LinkedList();
 	
 	void whine(Object o)
 	{
