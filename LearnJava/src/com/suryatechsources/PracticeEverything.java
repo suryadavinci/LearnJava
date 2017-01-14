@@ -3,6 +3,7 @@ package com.suryatechsources;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 
 class Parent {
@@ -46,24 +47,30 @@ public class PracticeEverything extends Child{
 	
 	public static void main(String [] args) {
 
+		  	Scanner in = new Scanner(System.in);
+	        String time = in.next();
+	        
+	        int hourOff=0;
+	        int hour=0;
+	        
+	        if(time.contains("PM"))
+	            hourOff=12;
+	        
+	        hour=hourOff+Integer.parseInt(time.substring(0,2));
+	        
+	        if(hour==24)
+	        hour=12;
+	        if(time.contains("AM") && time.substring(0,2).equals("12"))
+		        hour=0;
 
-		
-		LinkedList ll= new LinkedList();
-		
-		ll.add(5);
-		ll.add(6);
-		ll.add(5);
-		ll.add(6);
-		
-		ll.add(5);
-		ll.add(6);
-		
-		
-		System.out.println(ll);
-		
-		
-		
-		
+	        String hourString=Integer.toString(hour);
+	        if(hourString.length()==1)
+	        hourString="0"+hourString;
+	        
+	        System.out.println(hourString+time.substring(2,8));
+	        
+	        main(null);
+	        
 		
 		
 		

@@ -39,11 +39,13 @@ public class FileWrite {
 		for(char c:in )
 		System.out.print(c);
 		
-		
+		float x=0;
 		
 		
 		
 		fr.close();
+		
+		
 	}
 
 }
