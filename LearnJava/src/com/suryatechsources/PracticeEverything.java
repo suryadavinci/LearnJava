@@ -42,39 +42,34 @@ class Child extends Parent
 }
 
 
-public class PracticeEverything extends Child{
+public class PracticeEverything extends Child implements Runnable{
+	public static int x=0;
 	
-	
-	public static void main(String [] args) {
+	public static void main(String [] args) throws Exception {
 
-		  	Scanner in = new Scanner(System.in);
-	        String time = in.next();
-	        
-	        int hourOff=0;
-	        int hour=0;
-	        
-	        if(time.contains("PM"))
-	            hourOff=12;
-	        
-	        hour=hourOff+Integer.parseInt(time.substring(0,2));
-	        
-	        if(hour==24)
-	        hour=12;
-	        if(time.contains("AM") && time.substring(0,2).equals("12"))
-		        hour=0;
 
-	        String hourString=Integer.toString(hour);
-	        if(hourString.length()==1)
-	        hourString="0"+hourString;
-	        
-	        System.out.println(hourString+time.substring(2,8));
-	        
-	        main(null);
-	        
+
+		recursion();
 		
 		
 		
 		 }
+	
+	
+	
+	public static void recursion() throws Exception
+	{
+
+
+		
+	}
+
+
+
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 /*
 	public static void main(String[] args) {
