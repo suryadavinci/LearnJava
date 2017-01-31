@@ -10,12 +10,12 @@ public class MyRunnable implements Runnable{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		System.out.println(Thread.currentThread().getName());
 
 		MyRunnable r= new MyRunnable();
 		
 		Thread s= new Thread(r);
-		Thread t= new Thread(r);
+		MyThread t= new MyThread();
 		Thread u= new Thread(r);
 		
 		t.setName("Thanu");

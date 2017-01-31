@@ -11,7 +11,16 @@ public class MyThread extends Thread{
 	
 	 public void run()
 	{
-		 System.out.println(Thread.currentThread().getName()+" is Running in MyThread");
+		 
+
+			int x=0;
+			for(int i=0;i<333;i++){
+				x++;
+			
+			System.out.println(x+" "+Thread.currentThread().getName()+" is Running in MyThread");
+			}
+		 
+		 
 	}
 	
 	 
