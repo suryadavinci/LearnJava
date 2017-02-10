@@ -10,15 +10,12 @@ public class CollectionsPractice {
 		
 		
 		
-		
-		
-		Set<String> s= new HashSet<String>();
-		
-		
-		s.add("hello");
-		s.add("hello");
-		
-		
+		System.out.println('['+1);
+		System.out.println(']'+1);
+		System.out.println('('+1);
+		System.out.println(')'+1);
+		System.out.println('{'+1);
+		System.out.println('}'+1);
 		
 		
 		
