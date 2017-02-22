@@ -2,17 +2,10 @@ package com.suryatechsources;
 
 public class DoAnything {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 
-		
-		
 		Math.random();
-		
 
-		
-		
-		
 	}
 
 }
