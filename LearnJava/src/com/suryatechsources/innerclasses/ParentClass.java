@@ -1,26 +1,32 @@
 package com.suryatechsources.innerclasses;
 
-class NotParentClass {
 
-	class InnerClass {
-
+class SomeClass{
+	
+	static class ItsInnerClass{
+		static{
+			ParentClass.x=5;
+		}
+		 void hello(){
+			System.out.println("hello");
+		}
 	}
+	
 }
 
-class InnerClass {
-	static int a = 0;
-}
 
 public class ParentClass {
 
-	static class InnerClass {
-		public static int a;
-	}
+	static int x=0;
+	
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		
+		System.out.println(x);
+		
+		Object obj=Class.forName("com.suryatechsources.innerclasses.SomeClass").newInstance();
+		
+		System.out.println(x);
 
-	public static void main(String[] args) {
-		InnerClass.a = 5;
-
-		System.out.println();
 	}
 
 }
