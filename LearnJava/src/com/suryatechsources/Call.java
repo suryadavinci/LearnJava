@@ -12,16 +12,13 @@ public class Call {
 
 	public static void main(String[] args) throws IOException {
 
-		//ConnectionFactory.getConnection();
+		// ConnectionFactory.getConnection();
 
-		//System.out.println("after");
-		//System.out.println();
-		//ConnectionFactory.getConnection();
-		ConnectionFactory c= new ConnectionFactory();
-		
-		
+		// System.out.println("after");
+		// System.out.println();
+		// ConnectionFactory.getConnection();
+		ConnectionFactory c = new ConnectionFactory();
 
-		
 	}
 
 }
