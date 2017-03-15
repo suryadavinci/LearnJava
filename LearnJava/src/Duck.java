@@ -15,9 +15,9 @@ public class Duck {
 }
 
 class rubberDuck extends Duck implements Flys{
-	/*public void fly(){
+	public void fly(){
 		System.out.println("Nope. Can't fly.");
-	}*/
+	}
 }
 
 
