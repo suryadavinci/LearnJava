@@ -2,11 +2,35 @@ package com.suryatechsources;
 
 import java.util.Arrays;
 
-public class Call {
+
+
+class NewParent{
+	
+	Call c;
+	NewParent(){
+		c= new Call();
+	}
+	
+	
+}
+public class Call extends NewParent {
+	
+	
+	static NewParent p;
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println("hi");
+		p=new NewParent();
+	}
+	
 	static int count;
 	static int memMax;
 
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
+		
+		
 		
 		int[] a= { 68, 35, 1, 70, 25, 79, 59, 63, 65, 6, 46, 82 };//{3,4,5,7,3,4,5};//AllUtils.generateRandomIntArray(10, 1, 10);
 		System.out.println(Arrays.toString(a));
